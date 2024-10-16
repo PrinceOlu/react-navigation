@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import posts from "../utils/Data"; // Ensure this path is correct
+import posts from "../utils/Data"; 
 import { Button, Card, Container } from 'react-bootstrap';
 
 function PostDetails() {
@@ -8,10 +8,6 @@ function PostDetails() {
 
   // Find the post based on postId
   const post = posts.find((post) => post.id === parseInt(postId));
-
-  // Log the post data for debugging
-  console.log("Post ID:", postId);
-  console.log("Found Post:", post);
 
   // If post is not found, handle this case
   if (!post) return <h2 className="text-center">Post not found</h2>;

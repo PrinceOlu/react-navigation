@@ -16,13 +16,7 @@ function NavBar() {
           <Nav.Link as={NavLink} to="/post" className={({ isActive }) => (isActive ? 'active' : '')}>
             Post
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
-            About
-          </Nav.Link>
-          <Nav.Link as={NavLink} to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
-            Contact
-          </Nav.Link>
-        </Nav>
+         </Nav>
       </Container>
     </Navbar>
   );
